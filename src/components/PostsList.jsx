@@ -10,7 +10,7 @@ function PostsList() {
   function bodyChangeHandler(event) {
     setEnteredBody(event.target.value);
   }
-  function bodyAuthorHandler(event) {
+  function AuthorChangeHandler(event) {
     setEnteredAuthor(event.target.value);
   }
 
@@ -18,7 +18,7 @@ function PostsList() {
     <>
       <NewPost
         onBodyChange={bodyChangeHandler}
-        onAuthorChange={bodyAuthorHandler}
+        onAuthorChange={AuthorChangeHandler}
       />
       <ul className={classes.posts}>
         <Post author={enteredAuthor} body={enteredBody} />
