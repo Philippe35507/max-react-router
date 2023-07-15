@@ -12,7 +12,7 @@ function NewPost({ onCancel, onAddPost }) {
     setEnteredAuthor(event.target.value);
   }
 
-  function submithandler(event) {
+  function submitHandler(event) {
     event.preventDefault();
     const postData = {
       body: enteredBody,
@@ -23,7 +23,7 @@ function NewPost({ onCancel, onAddPost }) {
   }
 
   return (
-    <form className={classes.form} onSubmit={submithandler}>
+    <form className={classes.form} onSubmit={submitHandler}>
       <p>
         <label htmlFor="body">Text</label>
         <textarea id="body" required rows={3} onChange={bodyChangeHandler} />
